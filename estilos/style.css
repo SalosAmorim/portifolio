@@ -13,12 +13,13 @@
   box-sizing: border-box;
 }
 :root{
-  --fundo-principal: #f4f4f4;
-  --fundo-card: #e9e9e9;
-  --texto: #222222;
+  --fundo-principal: #dddddd;
+  --fundo-card: #f0f0f0;
+  --texto: #00020a;
   --texto-inverso: #ffffff;
   --destaque: #5c32a9;
-  --destaque-inverso: #e7e7e6;
+  --destaque-2: #351c64;
+  --destaque-inverso: #d1d1d1;
 }
 body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -28,13 +29,13 @@ body{
 }
 
 header{
-  background-color: var(--destaque-inverso);
+  background-color: var(--destaque);
   color: var(--texto-inverso);
   padding: 10px;
   display: flex;
   justify-content: flex-end;
   align-content: center;
-  padding: 15px 5px;
+  padding: 20px 5px;
 }
 
 nav#menu ul{
@@ -45,14 +46,80 @@ nav#menu ul{
 
 nav#menu a{
   text-decoration: none;
-  color: var(--texto);
+  color: var(--texto-inverso);
   font-weight: 500;
   padding: 10px 15px;
-  border-radius: 25px;
+  border-radius: 50px;
   transition: background-color 0.3s, color 0.3s;
 }
 
 nav#menu a:hover{
-  background-color: var(--destaque);
-  color: var(--texto-inverso);
+  background-color: var(--destaque-2);
+  /* color: var(--texto); */
+}
+
+main{
+  display: grid;
+  grid-template-columns: auto 90vw auto;
+  margin-top: 15px;
+}
+
+section#ficha{
+  grid-column: 2;
+  background-color: var(--fundo-card);
+  padding: 20px;
+  border-radius: 6px;
+}
+section#ficha img{
+  width: 200px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 5px solid var(--fundo-card);
+  outline: 5px solid var(--destaque);
+  display: block;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+section#ficha h1{
+  color: var(--destaque);
+  margin: 15px 0;
+  font-size: 1.5em;
+  text-align: left;
+}
+div#social{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.8em;
+  margin-top: 15px;
+}
+div#social a{
+  text-decoration: none;
+  color: var(--texto);
+  background-color: var(--fundo-card);
+  border-radius: 25px;
+  padding: 5px;
+  transition: background-color .2s, color .2s;
+}
+div#social a:hover{
+  color: var(--destaque);
+  background-color: var(--destaque-inverso);
+}
+
+section#detalhes{
+  grid-column: 2;
+}
+article{
+  background-color: var(--fundo-card);
+  border-radius: 6px;
+  padding: 20px;
+  margin-top: 15px;
+}
+article>h2{
+  color: var(--destaque);
+  font-size: 1.2em;
 }
