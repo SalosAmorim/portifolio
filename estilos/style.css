@@ -121,5 +121,41 @@ article{
 }
 article>h2{
   color: var(--destaque);
-  font-size: 1.2em;
+  font-size: 1.4em;
+}
+
+
+#skill-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+#skill-container .item{
+    font-size: .9em;
+}
+#skill-container .info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+#skill-container .name{
+  font-weight: bold;
+  color: var(--texto);
+}
+#skill-container .percent{
+  font-weight: bold;
+  color: var(--destaque);
+}
+#skill-container .bar{
+  width: 100%;
+  height: 10px;
+  background-color: var(--fundo-principal);
+  border-radius: 25px;
+}
+#skill-container .progress{
+  width: 100%;
+  height: 10px;
+  background-color: var(--destaque);
+  border-radius: 25px;
 }
