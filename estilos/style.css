@@ -18,7 +18,7 @@
   --texto: #222222;
   --texto-inverso: #ffffff;
   --destaque: #5c32a9;
-  --destaque-inverso: #e9e7e4;
+  --destaque-inverso: #e7e7e6;
 }
 body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -28,8 +28,8 @@ body{
 }
 
 header{
-  background-color: var(--destaque);
-  color: var(--texto);
+  background-color: var(--destaque-inverso);
+  color: var(--texto-inverso);
   padding: 10px;
   display: flex;
   justify-content: flex-end;
@@ -45,13 +45,14 @@ nav#menu ul{
 
 nav#menu a{
   text-decoration: none;
-  color: var(--texto-inverso);
+  color: var(--texto);
   font-weight: 500;
   padding: 10px 15px;
   border-radius: 25px;
   transition: background-color 0.3s, color 0.3s;
 }
+
 nav#menu a:hover{
-  background-color: var(--destaque-inverso);
-  color: var(--texto);
+  background-color: var(--destaque);
+  color: var(--texto-inverso);
 }
