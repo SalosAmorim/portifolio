@@ -128,16 +128,17 @@ article>h2{
 #skill-container{
   display: grid;
   grid-template-columns: 1fr;
-  gap: 30px;
+  gap: 25px;
 }
 #skill-container .item{
-    font-size: .9em;
+    font-size: 1em;
 }
 #skill-container .info{
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 10px;
+  padding-bottom: 3px;
 }
 #skill-container .name{
   font-weight: bold;
@@ -158,4 +159,10 @@ article>h2{
   height: 10px;
   background-color: var(--destaque);
   border-radius: 25px;
+}
+
+@media  screen and (min-width: 768px) {
+  #skill-container{
+    grid-template-columns: 1fr 1fr;
+  }
 }
