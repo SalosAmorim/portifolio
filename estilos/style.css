@@ -19,7 +19,7 @@
   --texto-inverso: #ffffff;
   --destaque: #5c32a9;
   --destaque-2: #351c64;
-  --destaque-inverso: #d1d1d1;
+  --destaque-inverso: #8B4DFF;
 }
 body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -68,7 +68,7 @@ section#ficha{
   grid-column: 2;
   background-color: var(--fundo-card);
   padding: 20px;
-  border-radius: 6px;
+  border-radius: 6px;  
 }
 section#ficha img{
   width: 200px;
@@ -107,7 +107,7 @@ div#social a{
 }
 div#social a:hover{
   color: var(--destaque);
-  background-color: var(--destaque-inverso);
+  background-color: var(--fundo-principal);
 }
 
 section#detalhes{
@@ -166,6 +166,27 @@ article>h2{
   display: flex;
   flex-direction: column-reverse;
   gap: 20px;
+}
+
+#formacao-container .curso{
+  background-color: var(--fundo-principal);
+  border-radius: 6px;
+  padding: 10px;
+  border-left: 8px solid var(--destaque);
+  transition: border-left .3s ;
+}
+#formacao-container .curso:hover{
+  border-left: 12px solid var(--destaque-inverso);
+  cursor: pointer;
+}
+#formacao-container .periodo{
+  font-size: .8em;
+  font-weight: bold;
+  color: var(--texto);
+}
+#formacao-container .instituicao{
+  color: var(--destaque);
+  font-size: 1.1em;
 }
 
 @media  screen and (min-width: 768px) {
