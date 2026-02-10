@@ -122,6 +122,7 @@ article{
 article>h2{
   color: var(--destaque);
   font-size: 1.4em;
+  padding-bottom: 20px;
 }
 
 
@@ -137,7 +138,7 @@ article>h2{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 10px;
+  /* padding-top: 10px; */
   padding-bottom: 3px;
 }
 #skill-container .name{
@@ -159,6 +160,12 @@ article>h2{
   height: 10px;
   background-color: var(--destaque);
   border-radius: 25px;
+}
+
+#formacao-container{
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
 }
 
 @media  screen and (min-width: 768px) {
