@@ -36,6 +36,8 @@ header{
   justify-content: flex-end;
   align-content: center;
   padding: 20px 5px;
+  position: sticky;
+  top: 0;
 }
 
 nav#menu ul{
@@ -186,7 +188,9 @@ article>h2{
 #formacao-container .instituicao{
   color: var(--destaque);
   font-size: 1.1em;
+  transition: font-size .3s;
 }
+
 
 #projetos-container{
   display: flex;
@@ -204,7 +208,9 @@ article>h2{
   transition: border .5s;
   transition: box-shadow .5s;
 }
-
+#projetos-container .projeto:hover{
+  box-shadow: 1px 1px 3px var(--destaque);
+}
 #projetos-container .imagem{
   width: 100%;
   aspect-ratio: 16/9;
@@ -212,9 +218,39 @@ article>h2{
   overflow: hidden;
   border-radius: 6px;
 }
+#projetos-container .titulo{
+  color: var(--destaque);
+}
+#projetos-container .projeto a{
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--destaque-inverso);
+  font-size: .8em;
+  padding:4px 8px;
+  border-radius: 25px;
+  line-height: 28px;
+}
+#projetos-container .projeto a:hover{
+  color: var(--texto-inverso);
+  border-radius: 25px;
+  background-color: var(--destaque);
+}
 
-#projetos-container .projeto:hover{
-  box-shadow: 1px 1px 3px var(--destaque);
+footer{
+  background-color: var(--destaque);
+  color: var(--texto-inverso);
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+  font-size: .9em;
+}
+footer a{
+  text-decoration: none;
+  color: var(--texto-inverso);
+  font-weight: bold;
+}
+footer a:hover{
+  color: var(--destaque-inverso);
 }
 
 @media  screen and (min-width: 769px) {
