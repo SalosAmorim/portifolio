@@ -206,6 +206,7 @@ article>h2{
 
 #projetos-container{
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column-reverse;
   gap: 20px;
 }
@@ -282,14 +283,25 @@ footer a:hover{
     grid-template-columns: 1fr 1fr;
   }
 
-  #projetos-container .projeto{
-    max-width: 700px;
-  }
   #projetos-container{
     flex-direction: row-reverse;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   #projetos-container .imagem{
     aspect-ratio: 1/1;
+  }
+  #projetos-container .projeto{
+    max-width: 47%;
+  }
+}
+
+@media  screen and (min-width: 1024px){
+  #projetos-container .projeto{
+    max-width: 30%;
+  }
+}
+@media  screen and (min-width: 2560px){
+  #projetos-container .projeto{
+    max-width: 24%;
   }
 }
