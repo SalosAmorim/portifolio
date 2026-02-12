@@ -34,6 +34,7 @@ body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: var(--fundo-principal);
   color: var(--texto);
+  transition: background-color .5s, color .5s;
 }
 
 header{
@@ -216,11 +217,11 @@ article>h2{
   box-shadow: 2px 2px 2px #00020a23;
   padding: 10px;
   border-radius: 6px;
-  transition: border .5s;
-  transition: box-shadow .5s;
+  border-left: 8px solid var(--destaque);
+  transition: border-left .5s;
 }
 #projetos-container .projeto:hover{
-  box-shadow: 1px 1px 3px var(--destaque);
+  border-left: 8px solid var(--destaque-inverso);
 }
 #projetos-container .imagem{
   width: 100%;
@@ -271,7 +272,7 @@ footer a:hover{
     grid-column: 2 / 3;
     height: fit-content;
     position: sticky;
-    top: 70px;
+    top: 74px;
   }
   section#detalhes{
     grid-column: 3 / 4;
