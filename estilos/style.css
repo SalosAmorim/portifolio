@@ -21,6 +21,15 @@
   --destaque-2: #351c644d;
   --destaque-inverso: #8B4DFF;
 }
+body.escuro{
+  --fundo-principal: #222222;
+  --fundo-card: #444444;
+  --texto: #e0e0e0;
+  --texto-inverso: #333333;
+  --destaque: #8B4DFF;
+  --destaque-2: #351c644d;
+  --destaque-inverso: #5c32a9;
+}
 body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: var(--fundo-principal);
@@ -67,6 +76,7 @@ main{
 }
 
 section#ficha{
+  box-shadow: 2px 2px 2px #00020a23;
   grid-column: 2;
   background-color: var(--fundo-card);
   padding: 20px;
@@ -119,6 +129,7 @@ article{
   border-radius: 6px;
   padding: 20px;
   margin-bottom: 20px;
+  box-shadow: 2px 2px 2px #00020a23;
 }
 article>h2{
   color: var(--destaque);
@@ -169,6 +180,7 @@ article>h2{
   gap: 20px;
 }
 #formacao-container .curso{
+  box-shadow: 2px 2px 2px #00020a23;
   background-color: var(--fundo-principal);
   border-radius: 6px;
   padding: 10px;
